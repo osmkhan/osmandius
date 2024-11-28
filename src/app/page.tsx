@@ -7,7 +7,7 @@ export default function Home() {
       {/* Header */}
       <header className="max-w-4xl mx-auto mb-16">
         <h1 className="font-serif text-4xl md:text-5xl text-stone-900 mb-4">
-          Your Name
+          Osman R. Khan
         </h1>
         <div className="h-px w-16 bg-stone-400 mb-8"></div>
       </header>
@@ -26,7 +26,7 @@ export default function Home() {
           <div className="md:w-2/3 font-serif">
             <h2 className="text-2xl text-stone-900 mb-4">About</h2>
             <p className="text-stone-700 leading-relaxed mb-4">
-              Welcome. I'm a [your role] based in [your location]. My work focuses on [your interests/specialties].
+              Welcome. I'm a [your role] based in [your location]. My work focuse interests/specialties].
             </p>
             <p className="text-stone-700 leading-relaxed">
               Currently, I'm exploring [current interests/projects].
@@ -82,7 +82,7 @@ export default function Home() {
       {/* Footer */}
       <footer className="max-w-4xl mx-auto mt-16 pt-8 border-t border-stone-200">
         <p className="text-stone-500 text-sm text-center">
-          © {new Date().getFullYear()} Your Name. All rights reserved.
+          © {new Date().getFullYear()} Osman Rahim Khan. All rights reserved.
         </p>
       </footer>
     </div>
