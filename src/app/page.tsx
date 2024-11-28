@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 import Link from 'next/link';
 
 export default function Home() {
@@ -17,19 +18,21 @@ export default function Home() {
         {/* Bio Section */}
         <section className="mb-16 flex flex-col md:flex-row gap-8 items-start">
           <div className="md:w-1/3">
-            <img
+            <Image
               src="/api/placeholder/400/400"
               alt="Profile"
+              width={400}
+              height={400}
               className="w-full rounded-lg shadow-md"
             />
           </div>
           <div className="md:w-2/3 font-serif">
             <h2 className="text-2xl text-stone-900 mb-4">About</h2>
             <p className="text-stone-700 leading-relaxed mb-4">
-              Welcome. I'm a [your role] based in [your location]. My work focuse interests/specialties].
+              Welcome. I&apos;m a [your role] based in [your location]. My work focuses on [interests/specialties].
             </p>
             <p className="text-stone-700 leading-relaxed">
-              Currently, I'm exploring [current interests/projects].
+              Currently, I&apos;m exploring [current interests/projects].
             </p>
           </div>
         </section>
