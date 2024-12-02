@@ -1,91 +1,52 @@
-import React from 'react';
-import Image from 'next/image';
-import Link from 'next/link';
+import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-stone-50 px-4 py-12 md:px-8">
-      {/* Header */}
-      <header className="max-w-4xl mx-auto mb-16">
-        <h1 className="font-serif text-4xl md:text-5xl text-stone-900 mb-4">
-          Osman R. Khan
-        </h1>
-        <div className="h-px w-16 bg-stone-400 mb-8"></div>
-      </header>
-
-      {/* Main Content */}
-      <main className="max-w-4xl mx-auto">
+    <div className="min-h-screen px-4 py-12 md:px-8 bg-[#1a0808]">
+      <main className="max-w-4xl mx-auto flex flex-col md:flex-row gap-12">
         {/* Bio Section */}
-        <section className="mb-16 flex flex-col md:flex-row gap-8 items-start">
-          <div className="md:w-1/3">
-            <Image
-              src="/api/placeholder/400/400"
-              alt="Profile"
-              width={400}
-              height={400}
-              className="w-full rounded-lg shadow-md"
-            />
-          </div>
-          <div className="md:w-2/3 font-serif">
-            <h2 className="text-2xl text-stone-900 mb-4">About</h2>
-            <p className="text-stone-700 leading-relaxed mb-4">
-              Welcome. I&apos;m a [your role] based in [your location]. My work focuses on [interests/specialties].
-            </p>
-            <p className="text-stone-700 leading-relaxed">
-              Currently, I&apos;m exploring [current interests/projects].
+        <div className="md:w-2/3">
+          <h1 className="text-4xl md:text-5xl text-stone-100 mb-8 font-light">
+            Osman R. Khan
+          </h1>
+          <div className="prose prose-invert prose-lg">
+            <p className="text-xl text-stone-300 leading-relaxed">
+              Hello, I&apos;m Osman. This is my website.
             </p>
           </div>
-        </section>
+        </div>
 
-        {/* Projects Grid */}
-        <section className="grid md:grid-cols-2 gap-6">
-          {/* Writing */}
-          <Link href="/writing" className="group">
-            <div className="p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow duration-200">
-              <span className="block text-xl text-stone-400 mb-4 font-serif">§</span>
-              <h3 className="font-serif text-xl text-stone-900 mb-2">Writing</h3>
-              <p className="text-stone-600 text-sm">Essays, thoughts, and observations</p>
-              <span className="block mt-4 text-stone-400 text-sm group-hover:text-stone-600 transition-colors duration-200">
-                Read →
-              </span>
-            </div>
-          </Link>
-
-          {/* Dinner Map */}
-          <a 
-            href="https://osmanrkhan.github.io/twenty_dollar_dinners_map/html/dinner_map.html"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="group"
+        {/* Directory */}
+        <nav className="md:w-1/3 space-y-4">
+          <Link
+            href="/coding-projects"
+            className="block p-4 bg-[#2a0f0f] rounded-lg shadow-sm hover:bg-[#3a1515] transition-all duration-200"
           >
-            <div className="p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow duration-200">
-              <span className="block text-xl text-stone-400 mb-4 font-serif">⌖</span>
-              <h3 className="font-serif text-xl text-stone-900 mb-2">Dinner Map</h3>
-              <p className="text-stone-600 text-sm">Exploring affordable dining experiences</p>
-              <span className="block mt-4 text-stone-400 text-sm group-hover:text-stone-600 transition-colors duration-200">
-                Visit →
-              </span>
-            </div>
-          </a>
-
-          {/* Lahore Protest Tracker */}
-          <Link href="/lahore-protests" className="group">
-            <div className="p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow duration-200">
-              <span className="block text-xl text-stone-400 mb-4 font-serif">†</span>
-              <h3 className="font-serif text-xl text-stone-900 mb-2">Lahore Protest Tracker</h3>
-              <p className="text-stone-600 text-sm">Monitoring civic engagement and social movements</p>
-              <span className="block mt-4 text-stone-400 text-sm group-hover:text-stone-600 transition-colors duration-200">
-                View →
-              </span>
-            </div>
+            <h2 className="text-lg text-stone-100 mb-1">Coding Projects</h2>
+            <p className="text-sm text-stone-400">Rats</p>
           </Link>
-        </section>
+
+          <Link
+            href="/writing"
+            className="block p-4 bg-[#2a0f0f] rounded-lg shadow-sm hover:bg-[#3a1515] transition-all duration-200"
+          >
+            <h2 className="text-lg text-stone-100 mb-1">Writing</h2>
+            <p className="text-sm text-stone-400">Essays and thoughts</p>
+          </Link>
+
+          <Link
+            href="/research"
+            className="block p-4 bg-[#2a0f0f] rounded-lg shadow-sm hover:bg-[#3a1515] transition-all duration-200"
+          >
+            <h2 className="text-lg text-stone-100 mb-1">Research</h2>
+            <p className="text-sm text-stone-400">Academic work and publications</p>
+          </Link>
+        </nav>
       </main>
 
-      {/* Footer */}
-      <footer className="max-w-4xl mx-auto mt-16 pt-8 border-t border-stone-200">
+      <footer className="max-w-4xl mx-auto mt-16 pt-8 border-t border-stone-700">
         <p className="text-stone-500 text-sm text-center">
-          © {new Date().getFullYear()} Osman Rahim Khan. All rights reserved.
+          © {new Date().getFullYear()} Osman R. Khan. All rights reserved.
         </p>
       </footer>
     </div>
