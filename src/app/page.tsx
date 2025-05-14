@@ -14,7 +14,9 @@ export default function Home() {
               Hi, I&apos;m Osman. 
             </p>
             <p className="text-base text-[var(--muted)] leading-relaxed mb-8">
-              I work for the Wall Street Journal&apos;s newsroom data science team as statistician. I&apos;m currently working on some genAI projects. Previously I was building real-time data pipelines and contextual metrics that our newsroom uses to understand our readers.
+              I work for the Wall Street Journal&apos;s newsroom data science team as a statistician. I&apos;m currently working on some genAI projects.
+
+              Previously, I built real-time data pipelines and contextual metrics that our newsroom uses to understand our readers better.
             </p>
             <p className="text-base text-[var(--muted)] leading-relaxed">
               I was born in Canada, grew up in Pakistan, and, after a brief stint in the woods of New Hampshire, currently reside in Manhattan. I yet live. This is where I&apos;ll be keeping things I do going forward. If there&apos;s something here you like, please say hi!
@@ -51,7 +53,7 @@ export default function Home() {
             className="group block p-6 bg-[var(--card-bg)] rounded-lg border border-[var(--border)] hover:border-[#0077b5] transition-all duration-300"
           >
             <h2 className="text-xl font-serif mb-2 group-hover:text-[#0077b5] transition-colors duration-300">LinkedIn</h2>
-            <p className="text-[var(--muted)] text-sm">Connect with me here, if you must.</p>
+            <p className="text-[var(--muted)] text-sm">Connect with me here, if you feel so moved.</p>
           </a>
         </nav>
       </main>
