@@ -19,7 +19,16 @@ export default function CodingProjects() {
     {
       name: "Twenty-Dollar Dinner Map",
       repo: "osmkhan/twenty_dollar_dinners_map",
-      description: "A mock-up for the best blog in NYC's affordable dinner columns. They've since launched an upscaled, way better version here, with some input!",
+      description: "A prototype for NYC's best blog's best affordable dinner column. They've since launched an upscaled, way better version at{" "}
+                    <a 
+                      href="https://hellgatenyc.com/20-dinner-interactive-map-nyc-cheap-eats/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-[var(--accent)] hover:text-[var(--accent-hover)]"
+                    >
+                      Hell Gate
+                    </a>
+                    , with some input!",
       url: "https://hellgatenyc.com/20-dinner-interactive-map-nyc-cheap-eats/",
       showGithub: false
     }
@@ -42,7 +51,22 @@ export default function CodingProjects() {
                 {project.name}
               </h2>
               <p className="text-[var(--muted)] mb-6">
-                {project.description}
+                {project.name === "Twenty-Dollar Dinner Map" ? (
+                  <>
+                    A prototype for NYC's best blog's best affordable dinner column. They've since launched an upscaled, way better version at{" "}
+                    <a 
+                      href="https://hellgatenyc.com/20-dinner-interactive-map-nyc-cheap-eats/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-[var(--accent)] hover:text-[var(--accent-hover)]"
+                    >
+                      Hell Gate
+                    </a>
+                    , with some input!
+                  </>
+                ) : (
+                  project.description
+                )}
               </p>
               <div className="flex gap-4">
                 <a
