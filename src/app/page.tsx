@@ -10,8 +10,14 @@ export default function Home() {
             Osman R. Khan
           </h1>
           <div className="prose prose-invert prose-lg">
-            <p className="text-xl text-[var(--muted)] leading-relaxed">
-              Hi, I&apos;m Osman. This is where I&apos;ll be keeping things I do going forward. If there&apos;s something here you like, go on and let me know.
+            <p className="text-base text-[var(--muted)] leading-relaxed mb-8">
+              Hi, I&apos;m Osman. This is where I&apos;ll be keeping things I do going forward. If there&apos;s something here you like, please say hi!
+            </p>
+            <p className="text-base text-[var(--muted)] leading-relaxed mb-8">
+              Currently, I work in the Wall Street Journal&apos;s newsroom data science team. I&apos;m currently working on some AI projects, but previously I was building real-time data pipelines and contextual metrics that our newsroom uses to understand our readers.
+            </p>
+            <p className="text-base text-[var(--muted)] leading-relaxed">
+              I was born in Canada, grew up in Pakistan, and, after a brief stint in the woods of New Hampshire, currently reside in Manhattan. I yet live.
             </p>
           </div>
         </div>
@@ -24,7 +30,7 @@ export default function Home() {
           >
             <h2 className="text-xl font-serif mb-2 group-hover:text-[var(--accent)] transition-colors duration-300">Code Projects</h2>
             <p className="text-[var(--muted)] text-sm">
-              A collection of my work in software development and data visualization.
+              Some side projects for various friends.
             </p>
           </Link>
 
