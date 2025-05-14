@@ -11,7 +11,7 @@ export default function Home() {
           </h1>
           <div className="prose prose-invert prose-lg">
             <p className="text-xl text-[var(--muted)] leading-relaxed">
-              Hi, I&apos;m Osman. Here is where I keep my stuff.
+              Hi, I&apos;m Osman. This is where I&apos;ll be keeping things I do going forward. If there&apos;s something here you like, go on and let me know.
             </p>
           </div>
         </div>
@@ -45,7 +45,7 @@ export default function Home() {
             className="group block p-6 bg-[var(--card-bg)] rounded-lg border border-[var(--border)] hover:border-[#0077b5] transition-all duration-300"
           >
             <h2 className="text-xl font-serif mb-2 group-hover:text-[#0077b5] transition-colors duration-300">LinkedIn</h2>
-            <p className="text-[var(--muted)] text-sm">connect with me here, if you must.</p>
+            <p className="text-[var(--muted)] text-sm">Connect with me here, if you must.</p>
           </a>
         </nav>
       </main>
