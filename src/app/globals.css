@@ -4,9 +4,12 @@
 
 :root {
   --foreground: #f5f5f4;
-  --background: #0c0a09;
-  --accent: #8B0000;
-  --muted: #78716c;
+  --background: #1a0f0a;  /* Darker mahogany background */
+  --card-bg: #231510;     /* Darker card background */
+  --border: #2d1a12;      /* Darker border color */
+  --accent: #e6a17c;      /* Keeping the warm peach accent */
+  --accent-hover: #d48c67; /* Keeping the darker peach for hover */
+  --muted: #8b7d77;       /* Darker muted color */
 }
 
 @layer base {

@@ -11,7 +11,7 @@ export default function CodingProjects() {
     {
       name: "Fussin' and Lovin'",
       repo: "osmkhan/fussin_and_lovin",
-      description: "A desktop-friendly map of Matt Radosevich's 365 favorite country deep cuts!",
+      description: "A desktop-friendly map of Matt Radosevich's 365 favorite country deep cuts.",
       url: "https://osmkhan.github.io/fussin_and_lovin/"
     },
     {
@@ -46,15 +46,15 @@ export default function CodingProjects() {
                   href={project.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-[var(--muted)] hover:text-[var(--accent)] transition-colors duration-300"
+                  className="px-4 py-2 bg-[var(--border)] text-[var(--foreground)] rounded-md hover:bg-[var(--accent)] hover:text-white transition-all duration-300"
                 >
-                  View Project →
+                  Look At It →
                 </a>
                 <a
                   href={`https://github.com/${project.repo}`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-[var(--muted)] hover:text-[var(--accent)] transition-colors duration-300"
+                  className="px-4 py-2 bg-[var(--border)] text-[var(--foreground)] rounded-md hover:bg-[var(--accent)] hover:text-white transition-all duration-300"
                 >
                   GitHub Repository →
                 </a>
