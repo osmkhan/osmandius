@@ -28,22 +28,14 @@ export default function Home() {
             </p>
           </Link>
 
-          <Link
-            href="/writing"
-            className="group block p-6 bg-[#1a1a1a] rounded-lg border border-[#2a2a2a] hover:border-[var(--accent)] transition-all duration-300"
-          >
-            <h2 className="text-xl font-serif mb-2 group-hover:text-[var(--accent)] transition-colors duration-300">Writing</h2>
-            <p className="text-[var(--muted)] text-sm">Essays and thoughts on technology and life</p>
-          </Link>
-
           <a
             href="https://osmankhana.substack.com"
             target="_blank"
             rel="noopener noreferrer"
             className="group block p-6 bg-[#1a1a1a] rounded-lg border border-[#2a2a2a] hover:border-[var(--accent)] transition-all duration-300"
           >
-            <h2 className="text-xl font-serif mb-2 group-hover:text-[var(--accent)] transition-colors duration-300">The Northward Geese</h2>
-            <p className="text-[var(--muted)] text-sm">My Substack newsletter on technology and culture</p>
+            <h2 className="text-xl font-serif mb-2 group-hover:text-[var(--accent)] transition-colors duration-300">OsmanKhāna</h2>
+            <p className="text-[var(--muted)] text-sm">All the musings I'm allowed to publish by my employer and the U.S., Canadian, and Pakistani governments</p>
           </a>
         </nav>
       </main>

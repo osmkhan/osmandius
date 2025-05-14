@@ -3,10 +3,16 @@ import Link from "next/link";
 export default function CodingProjects() {
   const projects = [
     {
+      name: "Poisson Party Predictor",
+      repo: "osmkhan/poisson-party-predictor",
+      description: "A statistical tool that uses Bayesian and Poisson methods to analyze popularity patterns.",
+      url: "https://osmkhan.github.io/poisson-party-predictor/"
+    },
+    {
       name: "Fussin' and Lovin'",
       repo: "osmkhan/fussin_and_lovin",
-      description: "A data-driven exploration of relationships and human connection, visualized through interactive charts and narratives.",
-      url: "https://github.com/osmkhan/fussin_and_lovin"
+      description: "A desktop-friendly map of Matt Radosevich's 365 favorite country deep cuts!",
+      url: "https://osmkhan.github.io/fussin_and_lovin/"
     },
     {
       name: "Twenty Dollar Dinners Map",
@@ -27,7 +33,7 @@ export default function CodingProjects() {
           {projects.map((project) => (
             <div 
               key={project.repo}
-              className="group p-6 bg-[#1a1a1a] rounded-lg border border-[#2a2a2a] hover:border-[var(--accent)] transition-all duration-300"
+              className="group p-6 bg-[var(--card-bg)] rounded-lg border border-[var(--border)] hover:border-[var(--accent)] transition-all duration-300"
             >
               <h2 className="text-2xl font-serif mb-2 group-hover:text-[var(--accent)] transition-colors duration-300">
                 {project.name}
