@@ -11,13 +11,13 @@ export default function Home() {
           </h1>
           <div className="prose prose-invert prose-lg">
             <p className="text-base text-[var(--muted)] leading-relaxed mb-8">
-              Hi, I&apos;m Osman. This is where I&apos;ll be keeping things I do going forward. If there&apos;s something here you like, please say hi!
+              Hi, I&apos;m Osman. 
             </p>
             <p className="text-base text-[var(--muted)] leading-relaxed mb-8">
-              Currently, I work in the Wall Street Journal&apos;s newsroom data science team. I&apos;m currently working on some AI projects, but previously I was building real-time data pipelines and contextual metrics that our newsroom uses to understand our readers.
+              I work for the Wall Street Journal&apos;s newsroom data science team as statistician. I&apos;m currently working on some genAI projects. Previously I was building real-time data pipelines and contextual metrics that our newsroom uses to understand our readers.
             </p>
             <p className="text-base text-[var(--muted)] leading-relaxed">
-              I was born in Canada, grew up in Pakistan, and, after a brief stint in the woods of New Hampshire, currently reside in Manhattan. I yet live.
+              I was born in Canada, grew up in Pakistan, and, after a brief stint in the woods of New Hampshire, currently reside in Manhattan. I yet live. This is where I&apos;ll be keeping things I do going forward. If there&apos;s something here you like, please say hi!
             </p>
           </div>
         </div>
