@@ -35,7 +35,7 @@ export default function Home() {
             className="group block p-6 bg-[var(--card-bg)] rounded-lg border border-[var(--border)] hover:border-[var(--accent)] transition-all duration-300"
           >
             <h2 className="text-xl font-serif mb-2 group-hover:text-[var(--accent)] transition-colors duration-300">OsmanKhāna</h2>
-            <p className="text-[var(--muted)] text-sm">All the musings I'm allowed to publish by my employer and the U.S., Canadian, and Pakistani governments.</p>
+            <p className="text-[var(--muted)] text-sm">All the musings I&apos;m allowed to publish by my employer and the U.S., Canadian, and Pakistani governments.</p>
           </a>
 
           <a
