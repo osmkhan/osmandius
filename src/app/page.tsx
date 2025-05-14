@@ -22,7 +22,7 @@ export default function Home() {
             href="/coding-projects"
             className="group block p-6 bg-[var(--card-bg)] rounded-lg border border-[var(--border)] hover:border-[var(--accent)] transition-all duration-300"
           >
-            <h2 className="text-xl font-serif mb-2 group-hover:text-[var(--accent)] transition-colors duration-300">Coding Projects</h2>
+            <h2 className="text-xl font-serif mb-2 group-hover:text-[var(--accent)] transition-colors duration-300">Code Projects</h2>
             <p className="text-[var(--muted)] text-sm">
               A collection of my work in software development and data visualization.
             </p>

@@ -5,20 +5,23 @@ export default function CodingProjects() {
     {
       name: "Poisson Party Predictor",
       repo: "osmkhan/poisson-party-predictor",
-      description: "A statistical tool that uses Bayesian and Poisson methods to analyze popularity patterns.",
-      url: "https://osmkhan.github.io/poisson-party-predictor/"
+      description: "A little project to assuage a worried pre-party mind.",
+      url: "https://osmkhan.github.io/poisson-party-predictor/",
+      showGithub: true
     },
     {
       name: "Fussin' and Lovin'",
       repo: "osmkhan/fussin_and_lovin",
-      description: "A desktop-friendly map of Matt Radosevich's 365 favorite country deep cuts.",
-      url: "https://osmkhan.github.io/fussin_and_lovin/"
+      description: "A tool for tracking your progress through Matt Radosevich's best hand-picked country deep-cuts.",
+      url: "https://osmkhan.github.io/fussin_and_lovin/",
+      showGithub: true
     },
     {
-      name: "Twenty Dollar Dinners Map",
+      name: "Twenty-Dollar Dinner Map",
       repo: "osmkhan/twenty_dollar_dinners_map",
-      description: "An interactive map showcasing affordable dining options across the city, helping people discover great food without breaking the bank.",
-      url: "https://osmkhan.github.io/twenty_dollar_dinners_map/html/dinner_map.html"
+      description: "A mock-up for the best blog in NYC's affordable dinner columns. They've since launched an upscaled, way better version here, with some input!",
+      url: "https://hellgatenyc.com/20-dinner-interactive-map-nyc-cheap-eats/",
+      showGithub: false
     }
   ];
 
@@ -26,7 +29,7 @@ export default function CodingProjects() {
     <div className="min-h-screen px-4 py-12 md:px-8">
       <main className="max-w-4xl mx-auto">
         <h1 className="text-4xl md:text-6xl font-serif mb-8 font-light tracking-tight">
-          Coding Projects
+          Code Projects
         </h1>
         
         <div className="grid gap-6">
@@ -50,14 +53,16 @@ export default function CodingProjects() {
                 >
                   Look At It →
                 </a>
-                <a
-                  href={`https://github.com/${project.repo}`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="px-4 py-2 bg-[var(--border)] text-[var(--foreground)] rounded-md hover:bg-[var(--accent)] hover:text-white transition-all duration-300"
-                >
-                  GitHub Repository →
-                </a>
+                {project.showGithub && (
+                  <a
+                    href={`https://github.com/${project.repo}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-4 py-2 bg-[var(--border)] text-[var(--foreground)] rounded-md hover:bg-[var(--accent)] hover:text-white transition-all duration-300"
+                  >
+                    GitHub Repository →
+                  </a>
+                )}
               </div>
             </div>
           ))}
