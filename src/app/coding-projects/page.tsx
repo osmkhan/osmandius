@@ -19,18 +19,9 @@ export default function CodingProjects() {
     {
       name: "Twenty-Dollar Dinner Map",
       repo: "osmkhan/twenty_dollar_dinners_map",
-      description: "A prototype for NYC's best blog's best affordable dinner column. They've since launched an upscaled, way better version at{" "}
-                    <a 
-                      href="https://hellgatenyc.com/20-dinner-interactive-map-nyc-cheap-eats/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-[var(--accent)] hover:text-[var(--accent-hover)]"
-                    >
-                      Hell Gate
-                    </a>
-                    , with some input!",
-      url: "https://hellgatenyc.com/20-dinner-interactive-map-nyc-cheap-eats/",
-      showGithub: false
+      description: "A prototype for NYC's best blog's best affordable dinner column. They've since launched an upscaled, way better version at Hell Gate, with some input!",
+      url: "https://osmanrkhan.github.io/twenty_dollar_dinners_map/html/dinner_map.html",
+      showGithub: true
     }
   ];
 
@@ -53,8 +44,8 @@ export default function CodingProjects() {
               <p className="text-[var(--muted)] mb-6">
                 {project.name === "Twenty-Dollar Dinner Map" ? (
                   <>
-                    A prototype for NYC's best blog's best affordable dinner column. They've since launched an upscaled, way better version at{" "}
-                    <a 
+                    A prototype for NYC&apos;s best blog&apos;s best affordable dinner column. They&apos;ve since launched an upscaled, way better version at{" "}
+                    <a
                       href="https://hellgatenyc.com/20-dinner-interactive-map-nyc-cheap-eats/"
                       target="_blank"
                       rel="noopener noreferrer"
