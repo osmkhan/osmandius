@@ -2,16 +2,16 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="min-h-screen px-4 py-12 md:px-8 bg-[#1a0808]">
+    <div className="min-h-screen px-4 py-32 md:px-8">
       <main className="max-w-4xl mx-auto flex flex-col md:flex-row gap-12">
         {/* Bio Section */}
         <div className="md:w-2/3">
-          <h1 className="text-4xl md:text-5xl text-stone-100 mb-8 font-light">
+          <h1 className="text-4xl md:text-6xl font-serif mb-8 font-light tracking-tight">
             Osman R. Khan
           </h1>
           <div className="prose prose-invert prose-lg">
-            <p className="text-xl text-stone-300 leading-relaxed">
-              Hello, I&apos;m Osman. This is my website. More to come.
+            <p className="text-xl text-[var(--muted)] leading-relaxed">
+              Hi, I&apos;m Osman. Here is where I keep my stuff.
             </p>
           </div>
         </div>
@@ -20,34 +20,51 @@ export default function Home() {
         <nav className="md:w-1/3 space-y-4">
           <Link
             href="/coding-projects"
-            className="block p-4 bg-[#2a0f0f] rounded-lg shadow-sm hover:bg-[#3a1515] transition-all duration-200"
+            className="group block p-6 bg-[#1a1a1a] rounded-lg border border-[#2a2a2a] hover:border-[var(--accent)] transition-all duration-300"
           >
-            <h2 className="text-lg text-stone-100 mb-1">Coding Projects</h2>
-            <p className="text-sm text-stone-400">
-              See dinner map here:{" "}
-              <a
-                href="https://osmanrkhan.github.io/twenty_dollar_dinners_map/html/dinner_map.html"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="underline text-stone-300 hover:text-stone-100"
-              >
-                Dinner Map
-              </a>
+            <h2 className="text-xl font-serif mb-2 group-hover:text-[var(--accent)] transition-colors duration-300">Coding Projects</h2>
+            <p className="text-[var(--muted)] text-sm">
+              A collection of my work in software development and data visualization
             </p>
           </Link>
 
           <Link
             href="/writing"
-            className="block p-4 bg-[#2a0f0f] rounded-lg shadow-sm hover:bg-[#3a1515] transition-all duration-200"
+            className="group block p-6 bg-[#1a1a1a] rounded-lg border border-[#2a2a2a] hover:border-[var(--accent)] transition-all duration-300"
           >
-            <h2 className="text-lg text-stone-100 mb-1">Writing</h2>
-            <p className="text-sm text-stone-400">Essays and thoughts</p>
+            <h2 className="text-xl font-serif mb-2 group-hover:text-[var(--accent)] transition-colors duration-300">Writing</h2>
+            <p className="text-[var(--muted)] text-sm">Essays and thoughts on technology and life</p>
           </Link>
+
+          <a
+            href="https://osmankhana.substack.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group block p-6 bg-[#1a1a1a] rounded-lg border border-[#2a2a2a] hover:border-[var(--accent)] transition-all duration-300"
+          >
+            <h2 className="text-xl font-serif mb-2 group-hover:text-[var(--accent)] transition-colors duration-300">The Northward Geese</h2>
+            <p className="text-[var(--muted)] text-sm">My Substack newsletter on technology and culture</p>
+          </a>
         </nav>
       </main>
 
-      <footer className="max-w-4xl mx-auto mt-16 pt-8 border-t border-stone-700">
-        <p className="text-stone-500 text-sm text-center">
+      <div className="max-w-4xl mx-auto mt-24 px-4">
+        <div className="p-8 bg-[#1a1a1a] rounded-lg border border-[#2a2a2a]">
+          <h2 className="text-2xl font-serif mb-4">Stay Updated</h2>
+          <p className="text-[var(--muted)] mb-6">Get notified when I publish new projects or write something interesting.</p>
+          <a
+            href="https://osmankhana.substack.com/subscribe"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block px-6 py-2 bg-[var(--accent)] text-white rounded-lg hover:bg-[#6B0000] transition-colors duration-300"
+          >
+            Subscribe →
+          </a>
+        </div>
+      </div>
+
+      <footer className="max-w-4xl mx-auto mt-16 pt-8 border-t border-[#2a2a2a]">
+        <p className="text-[var(--muted)] text-sm text-center">
           © {new Date().getFullYear()} Osman R. Khan. All rights reserved.
         </p>
       </footer>

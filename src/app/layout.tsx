@@ -1,40 +1,31 @@
 import type { Metadata } from "next";
-import { Spectral } from "next/font/google";
+import { Spectral, Inter } from "next/font/google";
 import "./globals.css";
 
-// const spectral = Spectral({ 
-//   weight: ["400"],  // Simplified to just one weight
-//   subsets: ["latin"],
-// });
+const spectral = Spectral({ 
+  weight: ["400", "500", "600"],
+  subsets: ["latin"],
+  variable: "--font-spectral",
+});
 
-// export const metadata: Metadata = {
-//   title: "Osman R. Khan",
-//   description: "Personal website of Osman R. Khan",
-// };
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-inter",
+});
 
-// export default function RootLayout({
-//   children,
-// }: Readonly<{
-//   children: React.ReactNode;
-// }>) {
-//   return (
-//     <html lang="en">
-//       <body className={spectral.className}>
-//         {children}
-//       </body>
-//     </html>
-//   )
-  
-//   ;
-// }
+export const metadata: Metadata = {
+  title: "Osman R. Khan",
+  description: "Personal website of Osman R. Khan",
+};
+
 export default function RootLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body>
+    <html lang="en" className={`${spectral.variable} ${inter.variable}`}>
+      <body className="font-sans antialiased">
         {children}
       </body>
     </html>
