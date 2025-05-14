@@ -3,13 +3,6 @@ import Link from "next/link";
 export default function CodingProjects() {
   const projects = [
     {
-      name: "Poisson Party Predictor",
-      repo: "osmkhan/poisson-party-predictor",
-      description: "A little project to assuage a worried pre-party mind.",
-      url: "https://osmkhan.github.io/poisson-party-predictor/",
-      showGithub: true
-    },
-    {
       name: "Fussin' and Lovin'",
       repo: "osmkhan/fussin_and_lovin",
       description: "A tool for tracking your progress through Matt Radosevich's best hand-picked country deep-cuts.",
@@ -17,11 +10,18 @@ export default function CodingProjects() {
       showGithub: true
     },
     {
+      name: "Poisson Party Predictor",
+      repo: "osmkhan/poisson-party-predictor",
+      description: "A little project to assuage a worried pre-party mind.",
+      url: "https://osmkhan.github.io/poisson-party-predictor/",
+      showGithub: true
+    },
+    {
       name: "Twenty-Dollar Dinner Map",
       repo: "osmkhan/twenty_dollar_dinners_map",
       description: "A prototype for NYC's best blog's best affordable dinner column. They've since launched an upscaled, way better version at Hell Gate, with some input!",
       url: "https://osmanrkhan.github.io/twenty_dollar_dinners_map/html/dinner_map.html",
-      showGithub: true
+      showGithub: false
     }
   ];
 
@@ -90,6 +90,11 @@ export default function CodingProjects() {
           ← Back to Home
         </Link>
       </main>
+      <footer className="max-w-4xl mx-auto mt-16 pt-8 border-t border-[var(--border)]">
+        <p className="text-[var(--muted)] text-sm text-center">
+          © {new Date().getFullYear()} Osman R. Khan. All rights reserved.
+        </p>
+      </footer>
     </div>
   );
 } 
